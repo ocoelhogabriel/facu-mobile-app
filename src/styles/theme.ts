@@ -1,10 +1,15 @@
-export const theme = {
-  light: {
-    background: 'hsl(0, 0%, 100%)',
-    foreground: 'hsl(222.2, 47.4%, 11.2%)',
-  },
-  dark: {
-    background: 'hsl(224, 71% 4%)',
-    foreground: 'hsl(213, 31% 91%)',
+import { Theme } from "@react-navigation/native";
+
+const CustomDarkTheme: Theme = {
+  dark: true,
+  colors: {
+    primary: 'rgb(10, 132, 255)',
+    background: 'rgb(1, 1, 1)',
+    card: 'rgb(18, 18, 18)',
+    text: 'rgb(229, 229, 231)',
+    border: 'rgb(39, 39, 41)',
+    notification: 'rgb(255, 69, 58)',
   },
 };
+
+export default CustomDarkTheme;

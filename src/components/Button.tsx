@@ -4,18 +4,18 @@ import { Text, TouchableOpacity } from 'react-native';
 import { cn } from '../lib/utils';
 
 const buttonVariants = cva(
-  'flex flex-row items-center justify-center rounded-md',
+  'flex flex-row items-center justify-center ',
   {
     variants: {
       variant: {
-        default: 'bg-primary',
+        default: 'bg-black/70 m-2 rounded-xl border border-border',
         secondary: 'bg-secondary',
         destructive: 'bg-destructive',
         ghost: 'bg-slate-700',
         link: 'text-primary underline-offset-4',
       },
       size: {
-        default: 'h-10 px-4',
+        default: 'h-16 px-4',
         sm: 'h-8 px-2',
         lg: 'h-12 px-8',
       },
@@ -27,19 +27,19 @@ const buttonVariants = cva(
   }
 );
 
-const buttonTextVariants = cva('text-center font-medium', {
+const buttonTextVariants = cva('text-center font-bold', {
   variants: {
     variant: {
-      default: 'text-primary-foreground',
+      default: 'text-white/90',
       secondary: 'text-secondary-foreground',
       destructive: 'text-destructive-foreground',
       ghost: 'text-primary-foreground',
       link: 'text-primary-foreground underline',
     },
     size: {
-      default: 'text-base',
+      default: 'text-xl',
       sm: 'text-sm',
-      lg: 'text-xl',
+      lg: '',
     },
   },
   defaultVariants: {
